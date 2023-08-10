@@ -1,0 +1,36 @@
+<article class="component-container">
+<section class="m-5">
+    <p>Nuevas huellitas en adopcion</p>
+</section>
+
+<section class="m-5 ">
+    <p>Adopta una huellita</p>
+</section>
+<section class="m-5 d-flex">
+    
+    <div class="col-4 ">
+      <button class="  btn btn-lg rounded-pill px-4" 
+              (click)="changeColor($event)" 
+              [ngClass]="{'btn-selected': selectedButton === 'todos'}"
+              (mouseenter)="onMouseEnter('todos')"
+              (mouseleave)="onMouseLeave('todos')">todos</button>
+    </div>
+    <div class="col-4 text-center">
+      <button class="btn btn-lg rounded-pill px-4" 
+              (click)="changeColor($event)" 
+              [ngClass]="{'btn-selected': selectedButton === 'perros'}"
+              (mouseenter)="onMouseEnter('perros')"
+              (mouseleave)="onMouseLeave('perros')">perros</button>
+    </div>
+    <div class="col-4 text-end">
+      <button class="btn btn-lg rounded-pill px-4" 
+              (click)="changeColor($event)" 
+              [ngClass]="{'btn-selected': selectedButton === 'gatos'}"
+              (mouseenter)="onMouseEnter('gatos')"
+              (mouseleave)="onMouseLeave('gatos')">gatos</button>
+    </div>
+  </section>
+  
+  
+  
+</article>
