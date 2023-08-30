@@ -7,7 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './animals/views/login/login.component';
 import { AccessformComponent } from './animals/components/accessform/accessform.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './animals/views/home/home.component';
 
 @NgModule({
   declarations: [

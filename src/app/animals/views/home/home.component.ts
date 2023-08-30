@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DogApiService } from '../../services/dog-api-service.service';
-import { CatApiService } from '../../services/cat-api-service.service';
+import { DogApiService } from '../../../services/dog-api-service.service';
+import { CatApiService } from '../../../services/cat-api-service.service';
 import { forkJoin } from 'rxjs';
 @Component({
   selector: 'app-home',
