@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './animals/components/home/home.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 
 const routes: Routes = [

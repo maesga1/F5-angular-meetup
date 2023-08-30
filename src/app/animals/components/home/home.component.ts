@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DogApiService } from '../../../services/dog-api-service.service';
 import { CatApiService } from '../../../services/cat-api-service.service';
 import { forkJoin } from 'rxjs';
-import { HeaderComponent } from 'src/app/shared/header/header.component';
+import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
