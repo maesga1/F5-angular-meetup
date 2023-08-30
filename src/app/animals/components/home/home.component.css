@@ -1,0 +1,37 @@
+.component-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(231, 224, 218, 1);
+    overflow: auto;
+  }
+button{
+    background-color:rgba(255, 255, 255, 1)
+}
+button:hover {
+    background-color: rgba(139, 90, 43, 1);
+  }
+  
+.btn-selected {
+    background-color: rgba(139, 90, 43, 1);
+}
+p{
+    font-weight: bold;
+}
+.random-image {
+  width: 20vw;
+  height: 30vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom:5%;
+}
+
+.result-image {
+  width: 10vw;
+  height: 15vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
