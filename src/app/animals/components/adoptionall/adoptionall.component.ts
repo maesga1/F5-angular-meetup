@@ -20,7 +20,7 @@ export class AdoptionallComponent implements OnInit {
   
   ) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.loadImages();
   }
 
 
