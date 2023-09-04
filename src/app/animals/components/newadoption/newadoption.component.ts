@@ -7,11 +7,9 @@ import { DogApiService } from 'src/app/services/dog-api-service.service';
   styleUrls: ['./newadoption.component.css']
 })
 export class NewadoptionComponent implements OnInit {
-  selectedButton: string = 'all';
   dogImage: string = '';
   images: string[] = [];
   imageMap: { [key: string]: string[] } = {
-    all: [],
     dogs: [],
 
   };
