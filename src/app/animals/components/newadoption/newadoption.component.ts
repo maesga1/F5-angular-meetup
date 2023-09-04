@@ -32,7 +32,7 @@ export class NewadoptionComponent implements OnInit {
 
 
 
-    this.dogApiService.getDogImages(50).subscribe((dogData) => {
+    this.dogApiService.getDogImages(4).subscribe((dogData) => {
       this.imageMap['dogs'] = dogData.message;
       this.images = this.imageMap['dogs'];
     });

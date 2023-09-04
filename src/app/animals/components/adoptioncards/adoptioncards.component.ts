@@ -32,7 +32,7 @@ export class AdoptioncardsComponent  implements OnInit {
 
 
 
-    this.dogApiService.getDogImages(50).subscribe((dogData) => {
+    this.dogApiService.getDogImages(20).subscribe((dogData) => {
       this.imageMap['dogs'] = dogData.message;
       this.images = this.imageMap['dogs'];
     });
