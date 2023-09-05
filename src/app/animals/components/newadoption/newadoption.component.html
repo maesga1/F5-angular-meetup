@@ -1,0 +1,9 @@
+<section class="m-5">
+  <p>Nuevas huellitas en adopción</p>
+  <div class="d-flex flex-nowrap overflow-auto">
+    <div *ngFor="let image of images" class="mr-3">
+      <img [src]="image" alt="Dog" class="img-fluid mr-2" style="max-height: 200px;">
+    </div>
+  </div>
+</section>
+
