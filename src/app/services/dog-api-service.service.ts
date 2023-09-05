@@ -10,10 +10,6 @@ export class DogApiService {
 
   constructor(private http: HttpClient) {}
 
-  getRandomDogImage(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/breeds/image/random`);
-  }
-
   getDogImages(count: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/breeds/image/random/${count}`);
   }
