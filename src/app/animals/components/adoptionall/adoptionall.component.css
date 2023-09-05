@@ -1,1 +1,4 @@
-.btn{background-color:#8B5A2B}
+.btn{background-color:#8B5A2B;
+    display: block;
+    text-align: left;
+}
