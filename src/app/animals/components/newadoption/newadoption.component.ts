@@ -1,41 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { DogApiService } from 'src/app/services/dog-api-service.service';
+import { DogApiService } from '../../services/dog-api-service.service';
+import { Dogs } from '../../model/Dogs.model';
 
 @Component({
   selector: 'app-newadoption',
   templateUrl: './newadoption.component.html',
-  styleUrls: ['./newadoption.component.css']
+  styleUrls: ['./newadoption.component.css'],
 })
 export class NewadoptionComponent implements OnInit {
-  dogImage: string = '';
-  images: string[] = [];
-  imageMap: { [key: string]: string[] } = {
-    dogs: [],
+  images: Dogs[] = [];
 
-  };
+  constructor(private dogApiService: DogApiService) {}
 
-  constructor(
-    private dogApiService: DogApiService,
-  
-  ) {}
-  
-    ngOnInit(): void {
+  ngOnInit(): void {
     this.loadImages();
   }
 
   loadImages(): void {
-    this.dogApiService.getRandomDogImage().subscribe((dogData) => {
-      this.dogImage = dogData.message;
+    this.dogApiService.getDogImages(4).subscribe((dogData:any) => {
+      this.images = dogData.message;
     });
-
-
-
-    this.dogApiService.getDogImages(4).subscribe((dogData) => {
-      this.imageMap['dogs'] = dogData.message;
-      this.images = this.imageMap['dogs'];
-    });
-
   }
-
 }
-
